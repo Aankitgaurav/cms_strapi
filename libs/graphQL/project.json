@@ -1,0 +1,20 @@
+{
+  "name": "graphQL",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/graphQL/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project graphQL --web",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/graphQL",
+        "main": "libs/graphQL/src/index.ts",
+        "tsConfig": "libs/graphQL/tsconfig.lib.json",
+        "assets": []
+      }
+    }
+  }
+}
