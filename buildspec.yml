@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 20 # Specify your Node.js version
+      nodejs: 22 # Specify your Node.js version
     commands:
       - echo "Installing dependencies for Strapi CMS"
       - cd apps/strapi-cms
