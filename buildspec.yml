@@ -15,6 +15,12 @@ phases:
       - echo "Building the Strapi CMS application"
       - npm run build
 
+  post_build:
+    commands:
+      - echo Post-build phase started...
+      - rm -rf node_modules
+
+
 artifacts:
   files:
     - '**/*'
