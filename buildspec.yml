@@ -16,6 +16,4 @@ phases:
 
 artifacts:
   files:
-    - apps/strapi-cms/** # Include all files from the strapi-cms directory
-  discard-paths: no
-  base-directory: apps/strapi-cms # Set base directory for the artifacts
+    - '**/*'
