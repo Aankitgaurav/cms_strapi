@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20 # Specify your Node.js version
+    commands:
+      - echo "Installing dependencies for Strapi CMS"
+      - cd apps/strapi-cms
+      - npm install
+
+  build:
+    commands:
+      - echo "Building the Strapi CMS application"
+      - npm run build
+
+artifacts:
+  files:
+    - apps/strapi-cms/** # Include all files from the strapi-cms directory
+  discard-paths: no
+  base-directory: apps/strapi-cms # Set base directory for the artifacts
