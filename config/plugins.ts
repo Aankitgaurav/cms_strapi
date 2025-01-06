@@ -9,11 +9,11 @@ export default ({ env }) => ({
           Bucket: env("S3_BUCKET_NAME"),
         },
       },
-    },
-    actionOptions: {
-      upload: {},
-      uploadStream: {},
-      delete: {},
+      actionOptions: {
+        upload: {},
+        uploadStream: {},
+        delete: {},
+      },
     },
   });
   
