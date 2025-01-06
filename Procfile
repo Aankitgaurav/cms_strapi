@@ -1,1 +1,1 @@
-web: cd apps/strapi-cms && npm run start
+web: npm run start

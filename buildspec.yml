@@ -6,7 +6,6 @@ phases:
       nodejs: 20
     commands:
       - echo "Installing dependencies for Strapi CMS"
-      - cd apps/strapi-cms
       - npm install
   build:
     commands:
@@ -15,9 +14,7 @@ phases:
   post_build:
     commands:
       - echo "Post-build phase completed"
-
+      - rm -rf node_modules
 artifacts:
   files:
-    - 'apps/strapi-cms/**/*'
-
-web: cd apps/strapi-cms && npm run start
+    - '**/*'
