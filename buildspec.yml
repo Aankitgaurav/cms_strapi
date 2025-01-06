@@ -9,11 +9,13 @@ phases:
       - cd apps/strapi-cms
       - npm cache clean --force
       - npm install
+      - ls node_modules/.bin/strapi
+      - npm install -g strapi
 
   build:
     commands:
       - echo "Building the Strapi CMS application"
-      - npm strapi start
+      - npm run build
 
   post_build:
     commands:
