@@ -10,5 +10,10 @@ export default ({ env }) => ({
         },
       },
     },
+    actionOptions: {
+      upload: {},
+      uploadStream: {},
+      delete: {},
+    },
   });
   
